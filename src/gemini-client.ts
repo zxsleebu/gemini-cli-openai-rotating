@@ -372,7 +372,8 @@ export class GeminiApiClient {
 		const isRealThinkingEnabled = this.env.ENABLE_REAL_THINKING === "true";
 		const isFakeThinkingEnabled = this.env.ENABLE_FAKE_THINKING === "true";
 		const streamThinkingAsContent = this.env.STREAM_THINKING_AS_CONTENT === "true";
-		const includeReasoning = options?.includeReasoning || false;
+		const includeReasoning =
+			options?.includeReasoning !== undefined ? options?.includeReasoning : this.env.INCLUDE_REASONING === "true";
 
 		const req = {
 			thinking_budget: options?.thinkingBudget,

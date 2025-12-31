@@ -13,6 +13,8 @@ kv_namespaces = [
 ENABLE_GEMINI_NATIVE_TOOLS="true"
 ENABLE_GOOGLE_SEARCH="true"
 ENABLE_URL_CONTEXT="true"
+ENABLE_REAL_THINKING="true"
+INCLUDE_REASONING="true"
 
 # --- Local Development Configuration ---
 # This section configures local development with Docker and miniflare

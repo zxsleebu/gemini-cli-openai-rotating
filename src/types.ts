@@ -17,6 +17,7 @@ export interface Env {
 	OPENAI_API_KEY?: string; // Optional API key for authentication
 	ENABLE_FAKE_THINKING?: string; // Optional flag to enable fake thinking output (set to "true" to enable)
 	ENABLE_REAL_THINKING?: string; // Optional flag to enable real Gemini thinking output (set to "true" to enable)
+	INCLUDE_REASONING?: string; // Optional flag to always include reasoning
 	STREAM_THINKING_AS_CONTENT?: string; // Optional flag to stream thinking as content with <thinking> tags (set to "true" to enable)
 	ENABLE_AUTO_MODEL_SWITCHING?: string; // Optional flag to enable automatic fallback from pro to flash on 429 errors (set to "true" to enable)
 	GEMINI_MODERATION_HARASSMENT_THRESHOLD?: SafetyThreshold;
